@@ -1,14 +1,12 @@
 "use client";
-import { IconCheck, IconSearch } from "@tabler/icons-react";
+import { IconSearch } from "@tabler/icons-react";
 import {
   Autocomplete,
   Button,
   Container,
   Group,
   Image,
-  List,
   Text,
-  ThemeIcon,
   Title,
 } from "@mantine/core";
 import image from "@/public/image.jpg";
@@ -83,7 +81,11 @@ export function Hero() {
             </Button>
           </Group>
         </div>
-        <Image src={image.src} className={classes.image} />
+        <Image
+          src={image.src}
+          className={classes.image}
+          alt="Hero Image of doctors"
+        />
       </div>
     </Container>
   );
